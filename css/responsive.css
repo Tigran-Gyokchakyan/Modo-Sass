@@ -164,8 +164,12 @@
   }
   .burger-menu {
     display: inline-block;
-    padding-right: 55px;
+    /*padding-right: 55px;*/
   }
+  .row {
+    width: 100%;
+    margin: 0;
+}
   .burger-menu span {
     color: #fff;
   }
