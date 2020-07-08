@@ -1,0 +1,668 @@
+/*
+*
+*
+#CSS Map
+01. Import Variables
+02. Import Mixins
+03. Import Fonts
+04. Default
+05. Styleing
+06. Form
+*
+*
+*/
+
+/* 01. Import Variables */
+
+@import "variables";
+
+/* 02. Import Mixins */
+
+@import "mixins";
+
+/* 03. Import Fonts */
+
+@import url("https://use.typekit.net/ppy7hcy.css");
+
+/* 04. Default */
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: $fontfamily;
+  scroll-behavior: smooth;
+}
+.row {
+  width: 100%;
+}
+body,
+html {
+  height: 100vh;
+}
+body {
+  background-color: #F2FAFF;
+}
+.mrg-5 {
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+a,
+button:active,
+button:focus,
+input:active,
+input:focus {
+  outline: 0 !important;
+}
+a:hover {
+  text-decoration: none;
+}
+.mrl-15 {
+  margin-left: 15px;
+}
+/* 05. Styleing */
+
+.container-box {
+  @include flexcont;
+  height: 100%;
+  .pagetitle {
+    font-weight: $fontweight;
+    @include fontsize(2.8rem);
+    color: $titlecolor;
+  }
+  label {
+    color: $colorgrey;
+    @include fontsize(1.25rem);
+  }
+  .targetlink a {
+    color: $linkcolor;
+  }
+  .social a {
+    color: $colorgrey;
+    @include fontsize(1rem);
+  }
+  .social i {
+    background-color: $colorgrey;
+    color: $sociconcolor;
+    width: $sociconwidth_height_lineheight;
+    height: $sociconwidth_height_lineheight;
+    border-radius: $borderradius;
+    @include fontsize(0.75rem);
+    line-height: $sociconwidth_height_lineheight;
+    text-align: center;
+    margin-right: 0.3125rem;
+  }
+}
+/* 06 Form */
+
+.form {
+  margin-top: 3.125rem;
+  .inp {
+    border: 0;
+    border-bottom: $border_bottom;
+    color: $titlecolor;
+    height: 3.125rem;
+    margin-bottom: 3.125rem;
+    @include fontsize(1.25rem);
+    font-weight: 400;
+  }
+  .forget {
+    color: $linkcolor;
+    @include fontsize(1.25rem);
+  }
+  form {
+    @include form;
+    width: 300px;
+  }
+  .social-box {
+    @include form;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 6.25rem;
+    margin-left: -1.25rem;
+  }
+  .social {
+    margin-bottom: 0.625rem;
+  }
+  .form-btn {
+    border: 0;
+    @include fontsize(1.125rem);
+    height: 3.125rem;
+    width: 100%;
+    border-radius: $borderradius;
+    color: $sociconcolor;
+    background: $btngradient;
+    margin-top: 2.18rem;
+    padding-bottom: 0.3125rem;
+  }
+  .targetlink {
+    text-align: center;
+    margin-top: 1.25rem;
+    @include fontsize(1.125rem);
+  }
+}
+.logo {
+  padding-right: 25%;
+}
+.top-menu {
+  @include top-menu(absolute, 100%, 99, transparent);
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.menu-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.menu {
+  & ul {
+    list-style: none;
+    & li {
+      float: left;
+      & a {
+        display: block;
+        padding: 12px 20px;
+        color: white;
+      }
+      & a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.main-content {
+  overflow: hidden;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.responsive-1 {
+  width: 85%;
+  height: auto;
+}
+.blue {
+  background-image: url(../image/blue-1.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 80px;
+  background-size: 55% auto;
+}
+.menu-2 {
+  @include menu-2(#fff, 0px 0px 5px 3px #f1f1f1);
+  position: fixed;
+}
+.linkcolor {
+  color: #2f97f6 !important;
+}
+.burgercolor {
+  color: #2f97f6 !important;
+}
+.right-box {
+  & span {
+    width: 50px;
+    height: 50px;
+    background: -o-linear-gradient(334.17deg, #2f97f6 20.99%, #2de799 107.93%);
+    background: linear-gradient(115.83deg, #2f97f6 20.99%, #2de799 107.93%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  & h1 {
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    margin-top: 44px;
+    margin-bottom: 26px;
+  }
+  p {
+    @include fontsize(0.93rem);
+    line-height: 1.8;
+    font-family: $fontfamily;
+    color: $textcolor;
+    font-weight: $normalweight;
+    margin-bottom: 44px;
+  }
+  .btn-1 {
+    background: $btngradient;
+    border: none;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-family: $fontfamily;
+    letter-spacing: 1px;
+  }
+  .btn-2 {
+    background: $btngradient;
+    border: none;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-family: $fontfamily;
+    letter-spacing: 1px;
+    margin-left: 15px;
+  }
+}
+.green {
+  background-image: url(../image/green-1.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.left-box {
+  & h1 {
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  p {
+    @include fontsize(0.93rem);
+    line-height: 1.8;
+    font-family: $fontfamily;
+    color: $textcolor;
+    margin-bottom: 44px;
+  }
+  .btn-3 {
+    background: $btngradient;
+    border: none;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-family: $fontfamily;
+    letter-spacing: 1px;
+  }
+}
+.blue-1 {
+  background-image: url(../image/blue-2.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.left-box-1 {
+  h6, .gettext {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 170%;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  h1 {
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    margin-bottom: 21px;
+  }
+  p {
+    @include fontsize(0.93rem);
+    line-height: 1.8;
+    font-family: $fontfamily;
+  }
+  .btn-4 {
+    background: $btngradient;
+    border: none;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-family: $fontfamily;
+    letter-spacing: 1px;
+  }
+  .from {
+    color: $textcolor;
+    margin-bottom: 44px;
+  }
+}
+.box-content {
+  padding-top: 85px;
+}
+.boxes {
+  background-color: #fff;
+  margin-bottom: 20px;
+  -webkit-box-shadow: $boxshadow;
+  box-shadow: $boxshadow;
+  border-radius: 10px;
+  padding: 10px 20px;
+  height: 100%;
+  h5 {
+    @include fontsize(1rem !important);
+    font-weight: $fontweight;
+  }
+  p {
+    @include fontsize(0.9rem);
+    color: #a0a0a0;
+    line-height: 170%;
+  }
+  img {
+    margin-top: 33px;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 41px;
+  }
+}
+.green-2 {
+  background-image: url(../image/green-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  .img-1 {
+    position: absolute;
+    top: 20%;
+    left: 29%;
+  }
+  .img-2 {
+    position: absolute;
+    top: 50%;
+    left: 85px;
+  }
+}
+.features {
+  margin-top: 164px;
+}
+.feature-box {
+  h1 {
+    margin-bottom: 44px;
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    color: $titlecolor;
+  }
+}
+.feat-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  h6 {
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+  }
+  img {
+    margin-right: 65px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+  }
+  div {
+    margin-bottom: 20px;
+  }
+  p {
+    color: $textcolor;
+    line-height: 1.7;
+  }
+}
+.left-box-2 {
+  h1 {
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    margin-top: 20px;
+    margin-bottom: 23px;
+  }
+  p {
+    @include fontsize(0.93rem);
+    line-height: 1.8;
+    font-family: $fontfamily;
+    color: $textcolor;
+    margin-bottom: 44px;
+  }
+  .btn-5 {
+    background: $btngradient;
+    border: none;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-family: $fontfamily;
+    letter-spacing: 1px;
+  }
+}
+.blue-3 {
+  background-image: url(../image/blue-3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.help {
+  margin-top: 131px;
+  margin-bottom: 82px;
+  h1 {
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    color: $titlecolor;
+    margin-bottom: 12px;
+  }
+  p {
+    font-family: $fontfamily;
+    color: $textcolor;
+    line-height: 1.7;
+  }
+}
+.help-box {
+  margin-bottom: 20px;
+  h5 {
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    color: $titlecolor;
+    margin-top: 23px;
+    margin-bottom: 25px;
+  }
+  p {
+    color: $textcolor;
+    @include fontsize(0.93rem);
+    line-height: 1.7;
+    font-family: $fontfamily;
+  }
+}
+.faq {
+  margin-top: 173px;
+  margin-bottom: 70px;
+  h1 {
+    color: $titlecolor;
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    margin-bottom: 10px;
+  }
+  p {
+    color: $textcolor;
+    font-family: $fontfamily;
+  }
+}
+// accordion
+ .accordion {
+  background-color: #fff;
+  -webkit-box-shadow: $boxshadow;
+  box-shadow: $boxshadow;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 10px;
+  margin-bottom: 13px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 12px;
+}
+.active,
+.accordion:hover {
+  background-color: #fff;
+}
+.panel {
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+// end the accordion
+ .subscribe {
+  margin-top: 215px;
+  margin-bottom: 100px;
+  h1 {
+    color: $titlecolor;
+    font-weight: $fontweight;
+    font-family: $fontfamily;
+    margin-bottom: 11px;
+  }
+  p {
+    color: $textcolor;
+    font-family: $fontfamily;
+    margin-bottom: 70px;
+  }
+  .btn-6 {
+    background: $btngradient;
+    border: none;
+    color: #fff;
+    padding: 13px 45px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-family: $fontfamily;
+    letter-spacing: 1px;
+    width: 20%;
+  }
+}
+// footer
+ .footer {
+  background-color: #2695f9;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 160px;
+  p {
+    color: #fff;
+    font-family: $fontfamily;
+  }
+  .copy {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .foot-box img {
+    margin-bottom: 20px;
+  }
+  .foot-box p {
+    margin-bottom: 110px;
+  }
+  .foot-box-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 23px;
+        a {
+          display: block;
+          color: #fff;
+          font-family: $fontfamily;
+          font-size: 15px;
+        }
+      }
+    }
+    .footer-links {
+      text-align: left;
+    }
+  }
+  .social_box {
+    margin-left: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    a {
+      color: $sociconcolor;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+}
+.foot {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #84bdf7;
+}
+// burger menu
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #2f97f6;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 35px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.burger-menu {
+  display: none;
+}

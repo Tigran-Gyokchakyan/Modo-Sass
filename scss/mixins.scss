@@ -1,0 +1,43 @@
+@mixin flexcont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@mixin form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@mixin fontsize ($fontrem) {
+  font-size: $fontrem;
+}
+@mixin top-menu ($fixed,
+$width,
+$z,
+$bg) {
+  position: $fixed;
+  width: $width;
+  z-index: $z;
+  background-color: $bg;
+}
+@mixin menu-2 ($bgmenu,
+$boxshadow) {
+  background-color: $bgmenu;
+  box-shadow: $boxshadow;
+}

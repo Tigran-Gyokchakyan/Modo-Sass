@@ -1,0 +1,582 @@
+/* 01. Import Variables */
+
+@import "variables";
+
+/* 02. Import Mixins */
+
+@import "mixins";
+
+/* 03. Import Fonts */
+
+@import url("https://use.typekit.net/ppy7hcy.css");
+
+/* 05 Responsive */
+
+@media (min-width: 1400px) {
+  .green-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .blue-1,
+  .blue,
+  .blue-3 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .logo {
+    padding-right: 15%;
+  }
+}
+@media (max-width: 1024px) {
+  img.img-1 {
+    width: 70%;
+  }
+  .menu ul li a {
+    padding: 12px 18px;
+  }
+}
+@media (max-width: 1300px) {
+  .green,
+  .blue-1 {
+    background-size: contain;
+  }
+  .blue {
+    background-position: right;
+    background-size: 65% 115%;
+  }
+  .logo {
+    padding-right: 25%;
+  }
+}
+@media (max-width: 955px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+  .right-box p {
+    font-size: 0.8rem;
+  }
+  button.btn-1 {
+    padding: 13px 25px;
+    font-size: 0.7rem;
+  }
+  button.btn-2 {
+    padding: 13px 25px;
+    font-size: 0.7rem;
+  }
+  button.btn-3 {
+    padding: 13px 25px;
+    font-size: 0.7rem;
+  }
+  button.btn-4 {
+    padding: 13px 25px;
+    font-size: 0.7rem;
+  }
+  button.btn-5 {
+    padding: 13px 25px;
+    font-size: 0.7rem;
+  }
+  .subscribe .btn-6 {
+    padding: 13px 25px;
+    font-size: 0.7rem;
+  }
+  .boxes {
+    height: 90%;
+  }
+  .left-box p {
+    font-size: 0.8rem;
+  }
+  .left-box-1 p {
+    font-size: 0.8rem;
+  }
+  .feat-box p {
+    font-size: 0.8rem;
+  }
+  .left-box-2 p {
+    font-size: 0.8rem;
+  }
+  .help p {
+    font-size: 0.8rem;
+  }
+  .help-box p {
+    font-size: 0.7rem;
+  }
+  .accordion {
+    font-size: 0.75rem;
+  }
+  .subscribe p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 830px) {
+  .menu ul li a {
+    padding: 12px 14px;
+  }
+  h1 {
+    font-size: 1.62rem;
+  }
+  .right-box p {
+    font-size: 0.75rem;
+  }
+  button.btn-1 {
+    padding: 13px 20px !important;
+    font-size: 0.7rem !important;
+  }
+  button.btn-2 {
+    padding: 13px 20px !important;
+    font-size: 0.7rem !important;
+  }
+  button.btn-3 {
+    padding: 13px 20px !important;
+    font-size: 0.7rem !important;
+  }
+  button.btn-4 {
+    padding: 13px 20px !important;
+    font-size: 0.7rem !important;
+  }
+  button.btn-5 {
+    padding: 13px 20px !important;
+    font-size: 0.7rem !important;
+  }
+  .subscribe .btn-6 {
+    padding: 13px 20px !important;
+    font-size: 0.7rem !important;
+  }
+  .left-box p {
+    font-size: 0.75rem;
+  }
+  .left-box-1 p {
+    font-size: 0.75rem;
+  }
+  .feat-box p {
+    font-size: 0.75rem;
+  }
+  .left-box-2 p {
+    font-size: 0.75rem;
+  }
+  .help p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .blue {
+    background-position: top;
+    background-size: contain;
+    padding: 0;
+  }
+  .burger-menu {
+    display: inline-block;
+    padding-right: 55px;
+  }
+  .burger-menu span {
+    color: #fff;
+  }
+  .right-box span {
+    width: 40px;
+    height: 40px;
+  }
+  .right-box h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .right-box h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  button.btn-1 {
+    font-size: 0.62rem !important;
+    padding: 10px 15px !important;
+  }
+  button.btn-2 {
+    font-size: 0.62rem !important;
+    padding: 10px 15px !important;
+  }
+  button.btn-3 {
+    font-size: 0.62rem !important;
+    padding: 10px 15px !important;
+  }
+  button.btn-4 {
+    font-size: 0.62rem !important;
+    padding: 10px 15px !important;
+  }
+  button.btn-5 {
+    font-size: 0.62rem !important;
+    padding: 10px 15px !important;
+  }
+  .subscribe .btn-6 {
+    font-size: 0.62rem !important;
+    padding: 10px 15px !important;
+  }
+  .right-box p {
+    font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 1.56rem;
+  }
+  .left-box p {
+    font-size: 0.7rem;
+  }
+  .left-box-1 p {
+    font-size: 0.7rem;
+  }
+  .box-content {
+    padding-top: 1.87rem;
+  }
+  .boxes {
+    height: 90%;
+  }
+  .boxes p {
+    font-size: 0.875rem;
+  }
+  .left-box-2 p {
+    font-size: 0.7rem;
+  }
+  .feat-box h6 {
+    font-size: 0.81rem;
+  }
+  .feat-box p {
+    font-size: 0.7rem;
+  }
+  .feat-box img {
+    margin-right: 25px;
+    width: 13%;
+  }
+  .feature-box h1 {
+    font-size: 1.375rem;
+    margin-bottom: 25px;
+  }
+  .green-2 .img-1 {
+    width: 65%;
+  }
+  .green-2 .img-2 {
+    width: 65%;
+  }
+  .help-box p {
+    font-size: 0.7rem;
+  }
+  .help-box h5 {
+    font-size: 1.125rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .help p {
+    font-size: 0.81rem;
+  }
+  .faq p {
+    font-size: 0.875rem;
+  }
+  .accordion {
+    font-size: 0.75rem;
+  }
+  .panel p {
+    font-size: 0.75rem;
+    line-height: 1.8;
+  }
+  .subscribe p {
+    font-size: 0.81rem;
+  }
+}
+@media (max-width: 767px) {
+  .container-box {
+    height: auto;
+    form {
+      width: 18.125rem;
+    }
+    .mrl-15 {
+      margin-left: 1.0625rem;
+    }
+    .social-box {
+      margin-top: 4.375rem;
+      margin-left: -1.5625rem;
+    }
+    .pagetitle {
+      text-align: center;
+      padding: 0 6.2rem;
+    }
+    .form-btn {
+      width: 75%;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+  .phone-1 {
+    order: -1;
+    margin-top: 45px;
+  }
+  .right-box p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.178rem;
+  }
+  button.btn-1 {
+    font-size: 0.9375rem !important;
+    padding: 12px 20px !important;
+  }
+  button.btn-2 {
+    font-size: 0.9375rem !important;
+    padding: 12px 20px !important;
+  }
+  button.btn-3 {
+    font-size: 0.9375rem !important;
+    padding: 12px 20px !important;
+  }
+  button.btn-4 {
+    font-size: 0.9375rem !important;
+    padding: 12px 20px !important;
+  }
+  button.btn-5 {
+    font-size: 0.9375rem !important;
+    padding: 12px 20px !important;
+  }
+  .subscribe .btn-6 {
+    font-size: 0.9375rem !important;
+    padding: 12px 20px !important;
+  }
+  .right-box {
+    text-align: center;
+  }
+  .right-box span {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+  }
+  .left-box p {
+    font-size: 1rem;
+  }
+  .left-box {
+    text-align: center;
+  }
+  .power {
+    order: 1;
+  }
+  .left-box-1 p {
+    font-size: 1rem;
+  }
+  .left-box-1 {
+    text-align: center;
+  }
+  .feat-box p {
+    font-size: 1.062rem;
+  }
+  .feat-box h6 {
+    font-size: 1rem;
+  }
+  .why {
+    order: 1;
+  }
+  .left-box-2 {
+    text-align: center;
+  }
+  .left-box-2 p {
+    font-size: 1rem;
+  }
+  .help p {
+    font-size: 1rem;
+  }
+  .help-box h5 {
+    font-size: 1.43rem;
+  }
+  .help-box p {
+    font-size: 1rem;
+  }
+  .foot-box {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer .foot-box-2 {
+    justify-content: center;
+  }
+  .top-menu {
+    background-color: #fff;
+  }
+  .burger-menu span {
+    color: #2f97f6 !important;
+  }
+}
+@media (max-height: 755px) {
+  .container-box {
+    height: auto;
+  }
+  .form {
+    .social-box {
+      margin-top: 1.25rem;
+    }
+  }
+}
+@media (max-height: 755px) and (max-width: 767px) {
+  .container-box {
+    /*-webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;*/
+    height: 100%;
+    .inp {
+      margin-bottom: 1.25rem;
+    }
+    .social-box {
+      margin-top: 2.5rem;
+    }
+    .form-btn {
+      margin-top: 1.18rem;
+    }
+  }
+}
+@media (max-height: 650px) and (max-width: 767px) {
+  .container-box {
+    height: auto;
+  }
+  .form {
+    .social-box {
+      margin-top: 1.25rem;
+    }
+    .inp {
+      height: 2.5rem;
+    }
+  }
+}
+// burger menu
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 425px) {
+  .burger-menu {
+    padding-right: 0;
+  }
+  .phone-1 {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .menu-box .logo {
+    padding-left: 0;
+  }
+  .power {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .why {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .right-box {
+    text-align: center;
+  }
+  .left-box {
+    text-align: center;
+  }
+  .left-box-1 {
+    text-align: center;
+  }
+  .boxes {
+    text-align: center;
+  }
+  .feature-box h1 {
+    text-align: center;
+  }
+  .left-box-2 {
+    text-align: center;
+  }
+  .help-box {
+    text-align: center;
+  }
+  .foot-box {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer .foot-box-2 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .copy {
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 1.5625rem;
+  }
+  .right-box p {
+    font-size: 0.7rem;
+  }
+  button.btn-1 {
+    font-size: 0.625rem !important;
+    padding: 10px 13px !important;
+  }
+  button.btn-2 {
+    font-size: 0.625rem !important;
+    padding: 10px 13px !important;
+  }
+  button.btn-3 {
+    font-size: 0.625rem !important;
+    padding: 10px 13px !important;
+  }
+  button.btn-4 {
+    font-size: 0.625rem !important;
+    padding: 10px 13px !important;
+  }
+  button.btn-5 {
+    font-size: 0.625rem !important;
+    padding: 10px 13px !important;
+  }
+  .subscribe .btn-6 {
+    font-size: 0.625rem !important;
+    padding: 10px 13px !important;
+  }
+  .left-box p {
+    font-size: 0.7rem;
+  }
+  .left-box-1 p {
+    font-size: 0.7rem;
+  }
+  .feat-box h6 {
+    font-size: 0.8125rem;
+  }
+  .feat-box p {
+    font-size: 0.7rem;
+  }
+  .left-box-2 p {
+    font-size: 0.7rem;
+  }
+  .help p {
+    font-size: 0.7rem;
+  }
+  .help-box h5 {
+    font-size: 0.9375rem;
+  }
+  .help-box p {
+    font-size: 0.7rem;
+  }
+  .faq p {
+    font-size: 0.7rem;
+  }
+  .subscribe p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 320px) {
+  .help p {
+    font-size: 0.7rem;
+  }
+  .accordion {
+    font-size: 0.625rem;
+  }
+  .subscribe p {
+    font-size: 0.7rem;
+  }
+  .copy {
+    font-size: 0.75rem;
+  }
+}
